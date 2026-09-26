@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Digital Business Card · Aravotix</title>
+  <meta name="description" content="The Aravotix digital business card for Arav Scindia, Founder & CEO.">
+  <meta name="theme-color" content="#04060c">
+  <meta name="color-scheme" content="dark">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:title" content="Digital Business Card · Aravotix">
+  <meta property="og:description" content="Out from the past and into the future.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="businesses.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__bar">
+      <a class="brand" href="index.html" aria-label="Aravotix home">
+        <img class="brand__logo" src="logo.svg" alt="" width="30" height="30">
+        <span class="brand__name">Aravotix</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="companies.html">Companies</a>
+        <a href="contact.html">Contact</a>
+        <a href="card.html" aria-current="page">Digital Card</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" id="top">
+      <div class="wrap">
+        <h1 class="page-hero__title">Digital Business Card</h1>
+        <p class="page-hero__lead"><span data-field="founderName"></span> &middot; <span data-field="founderTitle"></span></p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Business card">
+      <div class="wrap">
+        <div class="card-stage">
+          <div class="card-scene" data-card-scene tabindex="0" role="group" aria-label="Aravotix business card. Drag, swipe or use the buttons to turn it over.">
+            <div class="card-shadow" data-card-shadow aria-hidden="true"></div>
+            <div class="card3d" data-card>
+              <span class="card3d__slice s1" aria-hidden="true"></span>
+              <span class="card3d__slice s2" aria-hidden="true"></span>
+              <span class="card3d__slice s3" aria-hidden="true"></span>
+              <span class="card3d__slice s4" aria-hidden="true"></span>
+
+              <!-- Front -->
+              <div class="card3d__face card3d__front" data-face="front">
+                <div class="cf">
+                  <img class="cf__mark" src="logo.svg" alt="" width="40" height="40">
+                  <div class="cf__lower">
+                    <p class="cf__word">Aravotix</p>
+                    <p class="cf__motto">Out from the past and into the future.</p>
+                  </div>
+                </div>
+                <img class="cf__emblem" src="logo.svg" alt="Aravotix logo" width="170" height="170">
+              </div>
+
+              <!-- Back -->
+              <div class="card3d__face card3d__back" data-face="back" aria-hidden="true">
+                <img class="cb__emblem" src="logo.svg" alt="" width="150" height="150">
+                <div class="cb">
+                  <div class="cb__brand">
+                    <img src="logo.svg" alt="" width="28" height="28">
+                    <span>Aravotix</span>
+                  </div>
+                  <div class="cb__who">
+                    <p class="cb__name" data-field="founderName"></p>
+                    <p class="cb__title" data-field="founderTitle"></p>
+                  </div>
+                  <ul class="cb__list">
+                    <li><span class="cb__label">Phone</span><span data-field="phone"></span></li>
+                    <li><span class="cb__label">Email</span><span data-field="email"></span></li>
+                    <li><span class="cb__label">Web</span><span data-field="website"></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="seg" role="group" aria-label="Card side">
+            <button class="seg__btn" type="button" data-card-view="front" aria-pressed="true">View Front</button>
+            <button class="seg__btn" type="button" data-card-view="back" aria-pressed="false">View Back</button>
+          </div>
+          <p class="card-hint">Drag or swipe the card to turn it over.</p>
+
+          <div class="founder__actions">
+            <a class="btn btn--primary" data-link="phone">Call <span data-field="phone"></span></a>
+            <a class="btn btn--glass" data-link="email">Email</a>
+            <a class="btn btn--glass" data-link="website">Website</a>
+            <a class="btn btn--glass" data-link="digitalCard">Open digital card</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="index.html" aria-label="Aravotix home">
+          <img class="brand__logo" src="logo.svg" alt="" width="30" height="30">
+          <span class="brand__name">Aravotix</span>
+        </a>
+        <p class="footer__motto">Out from the past and into the future.</p>
+        <div class="follow follow--footer" data-follow hidden>
+          <p class="follow__label">Follow us</p>
+          <ul class="social" data-social="company"></ul>
+        </div>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <p class="footer__head">Explore</p>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="companies.html">Companies</a>
+        <a href="contact.html">Contact</a>
+        <a href="card.html">Digital Card</a>
+      </nav>
+      <div>
+        <p class="footer__head">Companies</p>
+        <ul class="footer__list" data-business-list></ul>
+      </div>
+      <div>
+        <p class="footer__head">Contact</p>
+        <ul class="footer__list" data-footer-contact></ul>
+      </div>
+    </div>
+    <div class="wrap footer__legal">
+      <p>&copy; <span data-year>2026</span> Aravotix</p>
+      <a class="footer__top" href="#top">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
